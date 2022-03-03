@@ -1,0 +1,123 @@
+* {
+    font-family: Rubik;
+}
+
+body {
+    background-color: #0350ff;
+}
+
+main {
+    display: flex;
+    place-content: center;
+}
+
+.wrapper {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: white;
+    margin: 4em 6em 4em 6em;
+    max-width: 60%;
+    -webkit-box-shadow: 0px 0px 100px 5px rgba(0, 0, 0, 0.60);
+    box-shadow: 0px 0px 100px 5px rgba(0, 0, 0, 0.60);
+}
+
+.box-left {
+    height: 100%;
+    width: 75%;
+    padding: 1em;
+    place-self: center;
+    text-align-last: right;
+}
+
+.box-right {
+    width: 100%;
+    padding: 1.5em 4em 1em 1.5em;
+    height: 100%;
+}
+
+.name {
+    margin-bottom: 5em;
+}
+
+.name h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.name p {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.sobremim {
+    margin-bottom: 1em;
+}
+
+.educacoes {
+    margin-bottom: 1em;
+}
+
+.experiencias {
+    margin-bottom: 1em;
+}
+
+section article h3 {
+    font-size: 0.8em;
+    font-weight: 700;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+}
+
+section article h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-bottom: 0.25em;
+}
+
+section article p {
+    font-size: 0.72em;
+    font-weight: 300;
+    margin-bottom: 1.5em;
+}
+
+.info i {
+    margin-left: 10px;
+}
+
+.info p {
+    margin-top: 0.25em;
+}
+
+.linha-vertical {
+    border-right: 2.5px solid black;
+    height: 90vh;
+    align-self: center;
+}
+
+@media(max-width:1280px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    .linha-vertical {
+        display: none;
+    }
+    .wrapper section article {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .box-right {
+        padding: 0%;
+    }
+    .box-left {
+        width: 100%;
+        padding: 1em;
+        text-align-last: center;
+    }
+    .name {
+        margin-bottom: 2em;
+    }
+}
